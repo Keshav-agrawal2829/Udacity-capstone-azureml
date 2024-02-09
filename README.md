@@ -12,20 +12,26 @@ In this project, we created two models: one using Automated ML (denoted as AutoM
 Heart Failure Prediction
 ### Overview
 *TODO*: Explain about the data you are using and where you got it from.
-Heart failure is a common event caused by CVDs and this dataset contains 12 features that can be used to predict mortality by heart failure. This dataset contains 300 samples. 
+Heart failure is a common event caused by CVDs and this dataset contains 12 features that can be used to predict mortality by heart failure. This dataset contains 300 samples. This dataset is availabe on Kaggle, which can be accesed using following link
+
+https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data
+
+
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
 This is a classification task where we need to predict the death event (which is a binary class) given the related features. The Features which are used to predict as follows:
 
 ['age', 'anaemia', 'creatinine_phosphokinase', 'diabetes','ejection_fraction', 'high_blood_pressure', 'platelets','serum_creatinine', 'serum_sodium', 'sex', 'smoking', 'time']
 
-
-
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
+We are accessing data using an external link with the help of "TabularDatasetFactory().from_delimited_files()" this Azureml funtion. The dataset is available on GitHub repo. 
+![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/dataset.PNG)
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+the Automl setting adn Configuration is used as showin in the following image
+![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/aml_config.PNG)
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
