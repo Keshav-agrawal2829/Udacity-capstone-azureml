@@ -16,6 +16,7 @@ Heart failure is a common event caused by CVDs and this dataset contains 12 feat
 ### Task
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
 This is a classification task where we need to predict the death event (which is a binary class) given the related features. The Features which are used to predict as follows:
+
 ['age', 'anaemia', 'creatinine_phosphokinase', 'diabetes','ejection_fraction', 'high_blood_pressure', 'platelets','serum_creatinine', 'serum_sodium', 'sex', 'smoking', 'time']
 
 
