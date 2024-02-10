@@ -33,6 +33,9 @@ We are accessing data using an external link with the help of "TabularDatasetFac
 the Automl setting adn Configuration is used as showin in the following image
 ![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/aml_config.PNG)
 
+| Configuration | Description | Value |
+| task | The type of task to run. Values can be 'classification', 'regression', or 'forecasting' depending on the type of automated ML problem | classification|
+
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
