@@ -34,6 +34,7 @@ the Automl setting adn Configuration is used as showin in the following image
 ![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/aml_config.PNG)
 
 | Configuration | Description | Value |
+| ------ | ------ | ------|
 | task | The type of task to run. Values can be 'classification', 'regression', or 'forecasting' depending on the type of automated ML problem | classification|
 
 ### Results
