@@ -37,10 +37,10 @@ the Automl setting adn Configuration is used as showin in the following image
 | ------ | ------ | ------|
 | task | The type of task to run. Values can be 'classification', 'regression', or 'forecasting' depending on the type of automated ML problem | classification|
 | training_data | data on which model needs to be trained | ds|
-| label_column_name | Target Column name | class|
+| label_column_name | Target Column name | DEATH_EVENT |
 | experiment_timeout_minutes | This is used as an exit criteria, it defines how long, in minutes, your experiment should continue to run | 20 |
 | max_concurrent_iterations | Represents the maximum number of iterations that would be executed in parallel | 5 |
-| primary_metric | 	The metric that Automated Machine Learning will optimize for model selection | accuracy |
+| primary_metric | 	The metric that Automated Machine Learning will optimize for model selection | AUC_Weighted |
 | compute_target | The compute target | trainCluster |
 | n_cross_validations | No. of cross validations to perform | 5 |
 
