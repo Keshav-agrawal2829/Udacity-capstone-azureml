@@ -48,25 +48,60 @@ the Automl setting adn Configuration is used as showin in the following image
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
+| Parameters | Value|
+| ----| ---- |
+| boosting_type | gbdt|
+| colsample_bytree | 0.723333333332 |
+| learning_rate | 0.068893135642 |
+| max_bin| 70 |
+| max_depth | 8 |
+| min_child_weight | 8 |
+| min_data_in_leaf | 0.039986572413755 |
+| n_estimators | 400 |
+| num_leaves | 200 |
+| subsample | 0.29658742214525 |
+
+
+To improve the results we can take more samples to train the model, increase in sample size will improve the model quality
+
+
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+*Run Details* 
+![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/rundetails_automl.PNG)
+
+*Printing best Model detailes*
+![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/rundetails_automl.PNG)
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
+To do the classification I have used the logistic regression based Machine Learning Method where there are two hyperparameters are there "C" and "max-iter". 
+"C" : - The Inverse of regularization Strength
+"max_iter" :-  Maximum number of iterations taken for the solver to converge
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
+![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/best_model_hyperdrive1.PNG)
+
+we can improve the model if we can normalize the columns of the dataset and if we can increase the range of hyperparameters we might get batter set of values of hyperparameters
+
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/rundetails_hyperdrive.PNG)
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
+*Service Active*
+![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/service_active.PNG)
+
+*testing the response of the Deployed Model*
+![alt text](https://github.com/Keshav-agrawal2829/Udacity-capstone-azureml/blob/main/service_response_logs.PNG)
+
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+Please find the recorded video on below link
+https://youtu.be/IY9YQMa7Qp4
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
